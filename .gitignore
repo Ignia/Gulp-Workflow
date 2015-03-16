@@ -1,3 +1,6 @@
 .sass-cache
 *.css.map
 node_modules
+Builds/Development
+Builds/Production/Shared/**/*.js
+Builds/Production/Shared/**/*.css

@@ -11,6 +11,7 @@
 | Revisions     Date            Author                  Comments
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 |               02.16.15        Jeremy Caney            Created initial version.
+|               03.15.15        Jeremy Caney            Tested against revised directory structure
 \-----------------------------------------------------------------------------------------------------------------------------*/
 
 /*==============================================================================================================================
@@ -197,6 +198,8 @@
   gulp.task("es6", function() {
     gulp.src(es6Files)
       .pipe(babel().on("error", gutil.log))
+    //.pipe(jshint('.jshintrc'))
+    //.pipe(jshint.reporter('default'))
       .pipe(concat("Script.js"))
       .pipe(gulp.dest(outputDir + "/Shared/Scripts/"))
       .pipe(notify({ message: 'ES6 task complete' }));
