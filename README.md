@@ -7,7 +7,7 @@ Provides boilerplate code for a workflow using Gulp, Bower, and Sass, based on I
 2. Download the `gulp-workflow` project
 3. Install dependencies using `npm install` in the `gulp-workflow` directory
 4. Run the initial build task using `gulp build`
-5. Open a browser to http://localhost:8080/
+5. Open a browser to [http://localhost:8080/](http://localhost:8080/)
 6. Begin development!
 
 ## Feedback
