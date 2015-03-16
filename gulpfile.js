@@ -51,16 +51,16 @@
 | ### NOTE: JJC021715: These paths are only intended for source files. Destination files will not use glob "magic", and will
 | be conditional based on the outputDir. As a result, they will likely be hardcoded into each task's dest() method.
 \-----------------------------------------------------------------------------------------------------------------------------*/
-  var   sassFiles       = "Source/Styles/**/*.scss",
-        sassMain        = "Source/Styles/Style.scss",
-        es6Files        = "Source/Scripts/**/*.js",
-        jsFiles         = "Builds/Development/Shared/Scripts/**/*.js",
-        jsonFiles       = "Builds/Development/API/**/*.json",
-        htmlFiles       = "Builds/Development/**/*.html",
-        cssFiles        = "Builds/Development/Shared/Styles/**/*.css",
-        imageFiles      = "Builds/Development/Images/**/*.*",
-        fontFiles       = "Builds/Development/Shared/Fonts/**/*.*",
-        staticFiles     = [];
+  var   sassFiles               = "Source/Styles/**/*.scss",
+        sassMain                = "Source/Styles/Style.scss",
+        es6Files                = "Source/Scripts/**/*.js",
+        jsFiles                 = "Builds/Development/Shared/Scripts/**/*.js",
+        jsonFiles               = "Builds/Development/API/**/*.json",
+        htmlFiles               = "Builds/Development/**/*.html",
+        cssFiles                = "Builds/Development/Shared/Styles/**/*.css",
+        imageFiles              = "Builds/Development/Images/**/*.*",
+        fontFiles               = "Builds/Development/Shared/Fonts/**/*.*",
+        staticFiles             = [];
 
 /*==============================================================================================================================
 | SET STATIC FILES
@@ -76,20 +76,20 @@
 >-------------------------------------------------------------------------------------------------------------------------------
 | Looks for an environment variable and conditionally set local context accordingly.
 \-----------------------------------------------------------------------------------------------------------------------------*/
-  environment           = process.env.BUILD_ENVIRONMENT || "development";
+  environment                   = process.env.BUILD_ENVIRONMENT || "development";
 
 //Environment: Development
   if (environment === "development") {
-    outputDir           = "Builds/Development/";
-    sassStyle           = "expanded";
-    isProduction        = false;
+    outputDir                   = "Builds/Development/";
+    sassStyle                   = "expanded";
+    isProduction                = false;
     }
 
 //Environment: Production
   else {
-    outputDir           = "Builds/Production/";
-    sassStyle           = "compressed";
-    isProduction        = true;
+    outputDir                   = "Builds/Production/";
+    sassStyle                   = "compressed";
+    isProduction                = true;
     }
 
 /*==============================================================================================================================
