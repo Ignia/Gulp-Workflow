@@ -1,0 +1,33 @@
+{
+  "name": "gulp-workflow",
+  "version": "0.0.1",
+  "description": "Ignia's default front-end workflow using Gulp, Bower, and Sass",
+  "main": "index.html",
+  "moduleType": [
+    "es6",
+    "globals"
+  ],
+  "keywords": [
+    "Gulp",
+    "Bower",
+    "Sass",
+    "workflow",
+    "build",
+    "process",
+    "boilerplate",
+    "Ignia"
+  ],
+  "authors": [
+    "Ignia",
+    "LLC"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/Ignia/gulp-workflow",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
