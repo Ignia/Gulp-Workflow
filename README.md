@@ -1,6 +1,6 @@
 # Ignia Frontend Workflow
 
-Provides boilerplate code for a workflow using Gulp, Bower, and Sass, based on Ignia's Website Structure.
+Provides boilerplate code for a workflow using Gulp, Bower, and Sass, based on [Ignia's Website Structure](https://github.com/Ignia/Website-Structure).
 
 ## Installation
 1. Install [Node.js](https://nodejs.org/)
